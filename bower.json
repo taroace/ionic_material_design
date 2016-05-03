@@ -1,0 +1,14 @@
+{
+  "name": "ionic_material_design",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.1"
+  },
+  "dependencies": {
+    "angular-material": "~0.10.0",
+    "ngmap": "~1.7.11"
+  },
+  "resolutions": {
+    "angular": "1.4.3"
+  }
+}

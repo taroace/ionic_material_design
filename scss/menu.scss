@@ -1,0 +1,22 @@
+.menu-head {
+  height: 100%;
+  width: 100%;
+  background: url(../img/login.jpg) 37% 24%;
+}
+
+.menu-head img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 50px auto auto auto;
+}
+
+.menu-head h1 {
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+}

@@ -1,0 +1,56 @@
+/* fill ion-content */
+.fill-content > .scroll {
+  height: 100%;
+}
+
+/* fix md-button style in menu side */
+.menu-item a {
+  padding: 0px !important;
+}
+
+.menu-button {
+  width: 100%;
+  height: 52px;
+  padding: 0px !important;
+  margin: 0px !important;
+  text-align: left !important;
+}
+
+.menu-button span {
+  padding-left: 16px;
+  text-transform: none;
+  font-size: large;
+}
+
+/* Ionic floating-label allows an icon on the right side */
+.item-floating-label .placeholder-icon {
+  padding-right: 18px;
+  position: absolute;
+  bottom: 9px;
+  left: 17px;
+}
+
+.item-floating-label {
+  padding-left: 40px !important;
+}
+
+/* Angular animation ng-show */
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.0s !important;
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.0s !important;
+}
+
+.animate-show.ng-hide {
+  opacity: 0 !important;
+}
+
+/* Angular animation ng-if */
+.animate-if.ng-enter, .animate-if.ng-leave {
+  -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.0s !important;
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.0s !important;
+}
+
+.animate-if.ng-leave {
+  opacity: 0 !important;
+}

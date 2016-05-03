@@ -1,0 +1,31 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-dark">
+        <button class="button button-positive"
+                ng-click="ctrl._util.open('https://www.google.com.mx/maps/place/Mexico+City,+Federal+District/@19.3907337,-99.1436126,11z/data=!3m1!4b1!4m2!3m1!1s0x85ce0026db097507:0x54061076265ee841?hl=en')">
+            Go to Map
+        </button>
+        <h1 class="title">Visit</h1>
+        <button class="button button-assertive" ng-click="ctrl.closeMap()">Close</button>
+    </ion-header-bar>
+    <ion-content class="fill-content">
+        <md-card style="height: 100%;">
+            <map center="mexico, city" style="height: 80%;">
+                <marker position="{{destination}}" ng-repeat="destination in ctrl.map.destinations"></marker>
+            </map>
+            <section layout="row" layout-align="center center">
+                <md-button class="md-raised md-warn" ng-click="ctrl.toUserPosition()">
+                    <md-icon>location_searching</md-icon>
+                    User
+                </md-button>
+                <md-button class="md-raised md-primary" ng-click="ctrl.toMyPosition()">
+                    <md-icon>my_location</md-icon>
+                    Mine
+                </md-button>
+                <md-button class="md-raised" ng-click="ctrl.showBoth()" ng-disabled="!ctrl.map.markers[1]">
+                    <md-icon>location_on</md-icon>
+                    Both
+                </md-button>
+            </section>
+        </md-card>
+    </ion-content>
+</ion-modal-view>

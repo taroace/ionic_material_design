@@ -1,0 +1,11 @@
+*~
+.idea/
+node_modules/
+platforms/
+plugins/
+resources/
+www/css
+www/dist
+www/lib
+
+*.iml

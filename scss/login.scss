@@ -1,0 +1,43 @@
+.login-animate {
+  background-position: 25% 16%;
+}
+
+.login {
+  background-image: url(../img/login.jpg);
+  -webkit-transition: all 1.5s ease-in-out;
+}
+
+.login img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding: 3% 0 10% 0;
+}
+
+.login form {
+  width: 80%;
+  margin: auto;
+}
+
+.login div {
+  border-color: transparent;
+}
+
+.login input {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding-left: 15px;
+}
+
+.login span {
+  color: white;
+}
+
+.login-data {
+  width: 80%;
+  margin: 0 auto 8% auto;
+}
+
+.login-fab md-fab-actions {
+  width: 100%;
+}

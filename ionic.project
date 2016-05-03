@@ -1,0 +1,8 @@
+{
+  "name": "ionic_material_design",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "useref",
+    "watch"
+  ]
+}

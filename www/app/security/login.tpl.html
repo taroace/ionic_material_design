@@ -1,0 +1,44 @@
+<ion-view view-title="Login" class="login" ng-class="ctrl.loginAnimate">
+    <ion-content>
+        <md-fab-speed-dial md-open="isOpen" md-direction="left" class="md-fling login-fab">
+            <md-fab-trigger>
+                <md-button aria-label="menu" class="md-fab md-warn" ng-click="isOpen = !isOpen">
+                    <md-icon>menu</md-icon>
+                </md-button>
+            </md-fab-trigger>
+            <md-fab-actions>
+                <md-button class="md-primary" ng-click="ctrl.external('Twitter')">
+                    <i class="ion-social-twitter"></i> Twitter
+                </md-button>
+                <md-button class="md-warn" ng-click="ctrl.external('Google')">
+                    <i class="ion-social-google"></i> Google
+                </md-button>
+                <md-button class="md-primary" ng-click="ctrl.external('Facebook')">
+                    <i class="ion-social-facebook"></i> Facebook
+                </md-button>
+            </md-fab-actions>
+        </md-fab-speed-dial>
+
+        <img src="img/logo.png">
+
+        <form name="form" ng-submit="ctrl.login()">
+            <div class="login-data">
+                <div class="item item-input item-floating-label">
+                    <span class="input-label">Username</span>
+                    <i class="icon ion-person placeholder-icon"></i>
+                    <input type="text" placeholder="Username" required focus input-clear="white"
+                           ng-model="ctrl.userName" ng-keyup="ctrl.next($event)">
+                </div>
+                <div class="item item-input item-floating-label">
+                    <i class="icon ion-locked placeholder-icon"></i>
+                    <span class="input-label">Password</span>
+                    <input id="password" type="password" placeholder="Password" required input-clear="white"
+                           ng-model="ctrl.password">
+                </div>
+            </div>
+            <md-button type="submit" class="md-raised md-primary button-block" ng-disabled="form.$invalid">
+                <i class="ion-log-in"></i> Log in
+            </md-button>
+        </form>
+    </ion-content>
+</ion-view>
